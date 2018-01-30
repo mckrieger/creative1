@@ -1,0 +1,335 @@
+<!-- I'm not actually using this html file in the current state.
+It changes how the images on the gallery page are displayed, but it isn't
+working properly. See photos.html for the html for the current gallery. -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Curtis Owens</title>
+<link rel="stylesheet" type="text/css" href="style1.css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<body>
+  <ul class="bar">
+   <li class="elem"><a class="nav" href="index.html">Home</a></li>
+   <li class="elem"><a class="nav" href="about.html">About Me</a></li>
+   <li class="elem" ><a class="nav" href="photos.html">Gallery</a></li>
+   <li class="elem" ><a class="nav" href="reviews.html">Reviews</a></li>
+   <li class="elem"><a class="nav" href="contact.html">Contact</a></li>
+ </ul>
+
+<div class='logo'>
+  <h3 class="logoElem">Curtis Owens Photography</h3>
+</div>
+<hr>
+<h1 class="heading">Gallery</h1>
+
+<div class='wrapper row1'>
+  <div class='grid1'>
+    <img id="i1" src="left.jpg"/>
+  </div>
+  <div class='grid2'>
+     <img id="i2" src="bench.jpg" />
+  </div>
+  <div class='grid3'>
+    <img id="i3" src="left2.jpg"/>
+  </div>
+
+  <div class='grid4'>
+    <img id="i4" src="car.jpg"/>
+  </div>
+  <div class='grid5'>
+    <img id="i5" src="horizontal.jpg"/>
+  </div>
+  <div class='grid6'>
+    <img id="i6" src="dance.jpg"/>
+  </div>
+  <div class='grid7'>
+    <img id="i7" src="tall.jpg"/>
+  </div>
+  <div class='grid8'>
+    <img id="i8" src="grove.jpg"/>
+  </div>
+  <div class='grid9'>
+    <img id="i9" src="tall2.jpg"/>
+  </div>
+</div>
+
+<p id="ad" class="intro short">Like what you see? Check out the <a href="contact.html">Contact page</a>
+   to set up an appointment.<p>
+
+
+<div class="bar" class="footer" >
+  <p class="footer">Feel free to take a look at my<a  class="footer" href='https://github.com/BYU-CS260-Winter-2018/lab-1-mckrieger'>Github Repository</a></p>
+</div>
+</body>
+</html>
+
+ -->
+
+<!--
+body,html {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  background-color: black;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows:auto;
+  }
+  .grid1 {
+    grid-column: 1/4;
+    grid-row:1/4;
+  }
+  .grid2 {
+    grid-column: 4/10;
+    grid-row:1/4;
+  }
+   .grid3 {
+    grid-column: 10/13;
+    grid-row:1/4;
+    align-items:flex-end;
+    justify-content:flex-end;
+  }
+  .grid4 {
+    grid-column: 1/5;
+    grid-row:4/8;
+  }
+  .grid5 {
+    grid-column: 5/9;
+    grid-row:4/8;
+  }
+  .grid6 {
+    grid-column: 9/13;
+    grid-row:4/8;
+  }
+  .grid7 {
+    grid-column: 1/4;
+    grid-row:8/12;
+  }
+  .grid8 {
+    grid-column: 4/10;
+    grid-row:8/12;
+  }
+  .grid9 {
+    grid-column: 10/13;
+    grid-row:8/12;
+  }
+
+#i2, #i1, #i3, #i9, #i8, #i7, #i4, #i5, #i6 {
+   width:100%;
+}
+
+#i1, #i2, #i8 {
+
+}
+
+
+
+#i8 {
+  padding-top:35px;
+}
+
+}
+
+
+.letters {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: all .3s ease;
+  /* display: block; */
+  max-width: 800px;
+ height: auto;
+}
+
+img < .wrapper {
+  width: 80px;
+}
+
+.photo {
+  margin: auto;
+  width: 600px;
+  display: block;
+  padding: 30px;
+  transition: all .3s ease;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  width: 560px;
+  margin: auto;
+  padding: 20px;
+}
+.intro {
+  border-style: groove;
+  padding: 20px;
+}
+#ad {
+  margin-top:30px;
+  margin-bottom:0px;
+}
+
+.logo {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.logoElem {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.elem {
+    float: left;
+}
+
+.nav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: #111;
+}
+
+.short {
+  text-align: center;
+}
+/*///////////////////////////////////////////////*/
+#reviews {
+
+}
+
+
+
+/*////////////////////////////////////////////*/
+#footer {
+  list-style-type: none;
+  height: 50px;
+  width: 100%;
+  bottom:0;
+  position: absolute;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+p.footer, a.footer{
+  padding: 15px;
+  color: white;
+
+}
+
+.footer {
+  text-align: center;
+}
+#content {
+  min-height: 100%;
+  position: relative;
+}
+#contactbody {
+  padding-bottom:5px;
+}
+
+html {
+  height:100%;
+}
+body {
+  height: 100%;
+}
+
+/* //////////////////////////////////////////////// */
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top:1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+
+-->
