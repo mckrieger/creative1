@@ -2,28 +2,51 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Curtis Owens</title>
+<title>P&F Generator</title>
 <link rel="stylesheet" type="text/css" href="style1.css"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
   <ul class="bar">
    <li class="elem"><a class="nav" href="index.html">Home</a></li>
-   <li class="elem"><a class="nav" href="editor.html">Editor</a></li>
    <li class="elem" ><a class="nav" href="episodes.html">Episodes</a></li>
+   <li class="elem"><a class="nav" href="editor.html">Editor</a></li>
    <li class="elem"><a class="nav" href="contact.html">Contact</a></li>
  </ul>
 
 <div class='logo'>
-  <!-- <img class="logoElem" src="logo.jpg" padding-top=20px/> -->
-  <h3 class="logoElem">Phineas and Ferb Generator</h3>
+  <h3 class="logoElem">Phineas & Ferb Generator</h3>
 </div>
 
 <hr>
 
+<form id="loadForm" action="" method="">
+      <div>
+            <label for="name">Session ID:</label>
+            <input type="text" id="name" name="user_name">
+            <button type="submit">Resume Session</button>
+            <p>If you are resuming a session, include your ID here</p>
+        </div>
+
+</form>
+
+<form id="saveForm" action="saved.html"
+      method="POST">
+
+        <div>
+          <p>If you would like to resume this session later, either
+            copy the Session ID in the box above, or enter your email so we can
+            send it to you. (Doesn't work for creative project).</p>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail">
+            <button type="submit">Save For Later</button>
+            <button type="submit">Finish and Submit</button>
+        </div>
+
+</form>
 
 <div class="bar" class="footer" >
-  <p class="footer">Feel free to take a look at my<a  class="footer" href='https://github.com/BYU-CS260-Winter-2018/lab-1-mckrieger'>Github Repository</a></p>
+  <p class="footer">Feel free to take a look at our<a  class="footer" href='https://github.com/mckrieger/creative1'>Github Repository</a></p>
 </div>
 </body>
 </html>
