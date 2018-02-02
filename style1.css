@@ -119,16 +119,18 @@ a.button {
  height: auto;
 }
 
-img < .wrapper {
-  width: 80px;
-}
-
 .photo {
   margin: auto;
   width: 600px;
   display: block;
   padding: 30px;
   transition: all .3s ease;
+}
+
+.graph {
+  margin: auto;
+  width: 600px;
+  display: block;
 }
 
 h1 {
@@ -238,7 +240,7 @@ body {
 }
 
 /* //////////////////////////////////////////////// */
-#contactForm {
+.contactForm {
   /* Just to center the form on the page */
   margin: 0 auto;
   width: 400px;
@@ -258,7 +260,11 @@ body {
   margin-bottom:15px;
   align-content:flex-end;
   text-align: right;
-  width: 600px;
+  margin-top:30px;
+}
+
+#editForm {
+  
 }
 
 form div + div {

@@ -22,16 +22,42 @@
 
 <form id="loadForm" action="" method="">
       <div>
-            <label for="name">Session ID:</label>
-            <input type="text" id="name" name="user_name">
-            <button type="submit">Resume Session</button>
+            <label for="session_id">Session ID:</label>
+            <input type="text" id="session_id" name="session_id">
+            <button type="button">Resume Session</button>
             <p>If you are resuming a session, include your ID here</p>
         </div>
+</form>
+
+<img class="graph" src="img/graph.png"/>
+
+<form class="contactForm" id="editForm" action="" method="">
+      <div>
+            <label for="event_type">Event Type</label>
+            <input type="text" id="event_type" name="event_type">
+        </div>
+        <div>
+              <label for="chracters">Characters Involved</label>
+              <input type="text" id="chracters" name="chracters">
+          </div>
+          <div>
+                <label for="location">Location of Event</label>
+                <input type="text" id="location" name="location">
+            </div>
+            <div>
+                  <label for="effects">Effects of Event</label>
+                  <input type="text" id="effects" name="effects">
+              </div>
+              <div>
+                    <label for="predecessor">ID of Immediate Predecessor(s)</label>
+                    <input type="text" id="predecessor" name="predecessor">
+                </div>
+                <button type="submit">Add Event</button>
 
 </form>
 
-<form id="saveForm" action="saved.html"
-      method="POST">
+<form id="saveForm" action=""
+      method="">
 
         <div>
           <p>If you would like to resume this session later, either
@@ -39,8 +65,8 @@
             send it to you. (Doesn't work for creative project).</p>
             <label for="mail">E-mail:</label>
             <input type="email" id="mail" name="user_mail">
-            <button type="submit">Save For Later</button>
-            <button type="submit">Finish and Submit</button>
+            <button type="button">Save For Later</button>
+            <button type="button">Finish and Submit</button>
         </div>
 
 </form>
